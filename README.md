@@ -27,24 +27,24 @@ CPP2Logic aims to bridge the gap between **complex C++ syntax and human understa
 git clone https://github.com/AbsarRaashid3/CPP2Logic.git  
 cd CPP2Logic
 
-### ** 2️⃣ Install Dependencies
+### **2️⃣ Install Dependencies
 Ensure you have Python 3.8+ and install the required libraries:
 pip install -r requirements.txt
 
-### ** 3️⃣ Preprocess Data
+### **3️⃣ Preprocess Data
 Convert raw training data into paired C++-pseudocode samples:
 python src/preprocess_code_to_pseudocode.py --input_tsv "data/spoc-train-train.tsv" --output_txt "data/train_pairs_code_to_pseudocode.txt"
 
-### ** 4️⃣ Build Vocabulary
+### **4️⃣ Build Vocabulary
 python src/vocab.py --pairs_file "data/train_pairs_code_to_pseudocode.txt" --src_vocab_file "src/src_vocab_code2pseudo.pkl" --tgt_vocab_file "src/tgt_vocab_code2pseudo.pkl"
 
-### ** 5️⃣ Train the Model
+### **5️⃣ Train the Model
 python src/train_code_to_pseudocode.py --pairs_file "data/train_pairs_code_to_pseudocode.txt" --src_vocab_file "src/src_vocab_code2pseudo.pkl" --tgt_vocab_file "src/tgt_vocab_code2pseudo.pkl" --epochs 30 --batch_size 8
 
-### ** 6️⃣ Run Inference (Convert C++ to Pseudocode)
+### **6️⃣ Run Inference (Convert C++ to Pseudocode)
 python src/infer_code_to_pseudocode.py --model_checkpoint transformer_code_to_pseudocode.pt --src_vocab_file "src/src_vocab_code2pseudo.pkl" --tgt_vocab_file "src/tgt_vocab_code2pseudo.pkl" --code "int main() { cout << 'Hello World'; }"
 
-### ** 7️⃣ Run the Web App
+### **7️⃣ Run the Web App
 streamlit run src/app_code_to_pseudocode.py
 
 
