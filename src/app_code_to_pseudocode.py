@@ -28,7 +28,7 @@ def load_model_and_vocab():
     return model, src_vocab, tgt_vocab, device
 
 def main():
-    st.title("C++ Code to Pseudocode Converter")
+    st.title("CPP2Logic")
     st.write("Enter your C++ code below:")
 
     code_input = st.text_area("C++ Code", height=200)
