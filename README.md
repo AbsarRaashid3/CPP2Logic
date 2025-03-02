@@ -61,3 +61,10 @@ streamlit run src/app_code_to_pseudocode.py
 
 # 🚀 CPP2Logic is here to revolutionize code understanding and translation!
 
+![cpp2](https://github.com/user-attachments/assets/27bcb0f4-1e48-422c-8897-41beb4643acd)
+![cpp3](https://github.com/user-attachments/assets/ab70275a-f5e4-4d08-a4e8-78158cc9a933)
+![cpp4](https://github.com/user-attachments/assets/fd38d8cd-0b85-450d-b4b2-aba479ab7183)
+![cpp1](https://github.com/user-attachments/assets/6976224b-b5db-4e69-93ed-7ecbe2f41a96)
+
+
+
